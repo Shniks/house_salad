@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @members = MemberService.new(state: params[:state]).members
+    @members = MemberService.new(params[:state]).members
   end
 end

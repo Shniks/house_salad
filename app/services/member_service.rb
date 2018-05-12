@@ -1,4 +1,5 @@
 class MemberService
+
   def initialize(state)
     @state = state
   end
@@ -10,7 +11,7 @@ class MemberService
   private
 
   def conn
-    check = Faraday.new(url: "https://api.propublica.org/congress/v1/members/house/#{@state}/current.json")
+    Faraday.new(url: "https://api.propublica.org/congress/v1/members/house/#{@state}/current.json")
   end
 
   def response
