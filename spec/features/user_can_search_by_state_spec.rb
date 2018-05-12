@@ -7,8 +7,8 @@ describe 'User can search for house members' do
     visit root_path
     # And I select "Colorado" from the dropdown
     select 'Colorado', from: :state
-    # And I click on "Locate Members from the House"
-    click_on 'Locate Members from the House'
+    # And I click on "Locate Members of the House"
+    click_on 'Locate Members of the House'
     # Then my path should be "/search" with "state=CO" in the parameters
     expect(current_path).to eq(search_path)
     # And I should see a message "7 Results"
