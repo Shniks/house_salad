@@ -18,3 +18,4 @@
 
 .byebug_history
 /spec/cassettes
+/config/application.yml
