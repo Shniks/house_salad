@@ -16,7 +16,7 @@ class MemberService
 
   def response
     response ||= conn.get do |request|
-      request.headers['X-API-KEY'] = '1yoVnglkHx9jYV4nAlC6V2RRZor0Zb9tr6P6dIG3'
+      request.headers['X-API-KEY'] = ENV['propublica_key']
     end
   end
 
